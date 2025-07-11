@@ -78,6 +78,19 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete 
 
 " ========================================
+" VimTeX Config
+" ========================================
+" Enable zathura through VimTeX
+let g:vimtex_view_enabled = 1
+let g:vimtex_view_method = 'zathura'
+
+" Necessary stuff to ensure Vim starts a server on load
+" This will only work if `vim --version` includes `+clientserver`!
+if empty(v:servername) && exists('*remote_startserver')
+  call remote_startserver('VIM')
+endif
+
+" ========================================
 " ALE Settings
 " ========================================
 
