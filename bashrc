@@ -9,6 +9,8 @@
 # Start zellij with bash
 eval "$(zellij setup --generate-auto-start bash)"
 
+# Start terminal in home directory
+cd ~
 # Alias definitions in a separate file in my dotfiles directory.
 
 if [ -f ~/dotfiles/bash_aliases ]; then
